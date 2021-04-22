@@ -21,5 +21,5 @@ from .import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('<int:category_id>/', views.detail, name='detail'),
-	path('/pdffile/<int:category_id>/<int:lecture_id>/', views.pdffile, name='pdffile'),
+    path('/pdffile/<int:category_id>/<int:lecture_id>/', views.pdffile, name='pdffile'),
 ]
